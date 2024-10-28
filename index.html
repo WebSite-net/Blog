@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
             background-color: #f4f4f4;
             overflow-x: hidden;
         }
+
         /* Header Animation */
         header {
             background-color: #333;
@@ -23,11 +25,13 @@
         }
 
         header:first-of-type:hover {
-            transform: scale(1.05); /* Grows the article slightly on hover */
+            transform: scale(1.05);
+            /* Grows the article slightly on hover */
         }
 
         header:first-of-type {
-            transition: transform 0.3s ease; /* Smooth transition effect */
+            transition: transform 0.3s ease;
+            /* Smooth transition effect */
         }
 
         header h1 {
@@ -36,11 +40,13 @@
         }
 
         header h1:first-of-type:hover {
-            transform: scale(1.05); /* Grows the article slightly on hover */
+            transform: scale(1.05);
+            /* Grows the article slightly on hover */
         }
 
         header h1:first-of-type {
-            transition: transform 0.3s ease; /* Smooth transition effect */
+            transition: transform 0.3s ease;
+            /* Smooth transition effect */
         }
 
         /* Navigation Animation */
@@ -49,6 +55,7 @@
             margin: 20px 0;
             animation: fadeIn 1.5s ease-out;
         }
+
         nav a {
             margin: 0 15px;
             text-decoration: none;
@@ -56,6 +63,7 @@
             font-weight: bold;
             transition: color 0.3s ease;
         }
+
         nav a:hover {
             color: #ff6347;
         }
@@ -73,6 +81,7 @@
         article {
             margin-bottom: 40px;
         }
+
         article h2 {
             color: #333;
             font-size: 1.8em;
@@ -80,11 +89,13 @@
         }
 
         article h2:first-of-type:hover {
-            transform: scale(1.05); /* Grows the article slightly on hover */
+            transform: scale(1.05);
+            /* Grows the article slightly on hover */
         }
 
         article h2:first-of-type {
-            transition: transform 0.3s ease; /* Smooth transition effect */
+            transition: transform 0.3s ease;
+            /* Smooth transition effect */
         }
 
         article p {
@@ -94,24 +105,30 @@
         }
 
         article p:first-of-type:hover {
-            transform: scale(1.05); /* Grows the article slightly on hover */
+            transform: scale(1.05);
+            /* Grows the article slightly on hover */
         }
 
         article p:first-of-type {
-            transition: transform 0.3s ease; /* Smooth transition effect */
+            transition: transform 0.3s ease;
+            /* Smooth transition effect */
         }
 
-         /* Image Styling and Animation */
-         article img {
-            display: block; /* Centers the image */
-            margin: 20px auto; /* Centering the image */
+        /* Image Styling and Animation */
+        article img {
+            display: block;
+            /* Centers the image */
+            margin: 20px auto;
+            /* Centering the image */
             width: 50%;
             height: 25%;
-            transition: transform 0.3s ease; /* Smooth transition for hover effect */
+            transition: transform 0.3s ease;
+            /* Smooth transition for hover effect */
         }
 
         article img:hover {
-            transform: scale(1.05); /* Grows the image slightly on hover */
+            transform: scale(1.05);
+            /* Grows the image slightly on hover */
         }
 
         /* Footer Animation */
@@ -124,45 +141,120 @@
         }
 
         footer:first-of-type:hover {
-            transform: scale(1.05); /* Grows the article slightly on hover */
+            transform: scale(1.05);
+            /* Grows the article slightly on hover */
         }
 
         footer:first-of-type {
-            transition: transform 0.3s ease; /* Smooth transition effect */
+            transition: transform 0.3s ease;
+            /* Smooth transition effect */
         }
 
         /* Keyframes for animations */
         @keyframes slideDown {
-            from { transform: translateY(-100px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+            from {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
         @keyframes fadeInUp {
-            from { transform: translateY(20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
 
         @keyframes zoomIn {
-            from { transform: scale(0.5); opacity: 0; }
-            to { transform: scale(1); opacity: 1; }
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
         }
 
         @keyframes fadeInText {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
         @keyframes slideUp {
-            from { transform: translateY(100px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .btns {
+            justify-content: center;
+            /* Centers horizontally */
+            align-items: center;
+            /* Centers vertically */
+            display: flex;
+            column-gap: 2rem;
+            border-radius: 8px;
+        }
+
+        .btn {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            font-weight: 500;
+            color: #000;
+            background-color: #fff;
+            border: none;
+            border-radius: 45px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            outline: none;
+            animation: zoomIn 1s ease;
+        }
+
+        .btn:hover {
+            background-color: #333;
+            box-shadow: 0px 15px 20px rgba(33, 34, 34, 0.4);
+            color: #fff;
+            transform: translateY(-7px);
         }
     </style>
 </head>
+
 <body>
 
     <header>
@@ -171,6 +263,12 @@
     </header>
 
     <nav>
+        <div class="btns">
+            <button class="btn"
+                onclick="window.location.href='https:storables.com/articles/where-are-pillows-made/'">Source</button>
+            <!--<button class="btn">Source</button>
+            <button class="btn">Source</button>-->
+        </div>
     </nav>
 
     <main>
@@ -201,7 +299,8 @@
                 oceans (Campbell, 2024). The journey is a reflection of the vast worldwide supply systems that
                 our class has been learning. My pillow would not be around today if international trade hadn't
                 been coordinated. Many nations were engaged in the production of the finished product, from
-                raw materials to it, demonstrating the interdependence that globalization symbolizes. Crossborder trade in goods, services, and technology connects economies and communities in ways
+                raw materials to it, demonstrating the interdependence that globalization symbolizes. Crossborder trade
+                in goods, services, and technology connects economies and communities in ways
                 that are frequently invisible. However, there are environmental consequences associated with
                 international shipping, such as resource usage and carbon emissions. Positively, globalization
                 makes it possible for citizens of other countries to engage in the global economy, creating jobs in
@@ -220,4 +319,5 @@
     </footer>
 
 </body>
+
 </html>
