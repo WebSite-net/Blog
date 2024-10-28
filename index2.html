@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Post 2: The Global Cost of Fast Fashion.">
+    <title>My Blog 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+
+        /* Header Animation */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            animation: slideDown 1s ease-out;
+        }
+
+        header:first-of-type:hover {
+            transform: scale(1.05);
+            /* Grows the article slightly on hover */
+        }
+
+        header:first-of-type {
+            transition: transform 0.3s ease;
+            /* Smooth transition effect */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header h1:first-of-type:hover {
+            transform: scale(1.05);
+            /* Grows the article slightly on hover */
+        }
+
+        header h1:first-of-type {
+            transition: transform 0.3s ease;
+            /* Smooth transition effect */
+        }
+
+        /* Navigation Animation */
+        nav {
+            text-align: center;
+            margin: 20px 0;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff6347;
+        }
+
+        /* Main Content Animation */
+        main {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 50px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1.5s ease;
+        }
+
+        article {
+            margin-bottom: 40px;
+        }
+
+        article h2 {
+            color: #333;
+            font-size: 1.8em;
+            animation: zoomIn 1s ease;
+        }
+
+        article h2:first-of-type:hover {
+            transform: scale(1.05);
+            /* Grows the article slightly on hover */
+        }
+
+        article h2:first-of-type {
+            transition: transform 0.3s ease;
+            /* Smooth transition effect */
+        }
+
+        article p {
+            line-height: 1.6;
+            font-size: 1.1em;
+            animation: fadeInText 2s ease;
+        }
+
+        article p:first-of-type:hover {
+            transform: scale(1.05);
+            /* Grows the article slightly on hover */
+        }
+
+        article p:first-of-type {
+            transition: transform 0.3s ease;
+            /* Smooth transition effect */
+        }
+
+        /* Image Styling and Animation */
+        article img {
+            display: block;
+            /* Centers the image */
+            margin: 20px auto;
+            /* Centering the image */
+            width: 50%;
+            height: 25%;
+            transition: transform 0.3s ease;
+            /* Smooth transition for hover effect */
+        }
+
+        article img:hover {
+            transform: scale(1.05);
+            /* Grows the image slightly on hover */
+        }
+
+        /* Footer Animation */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+            animation: slideUp 1s ease-out;
+        }
+
+        footer:first-of-type:hover {
+            transform: scale(1.05);
+            /* Grows the article slightly on hover */
+        }
+
+        footer:first-of-type {
+            transition: transform 0.3s ease;
+            /* Smooth transition effect */
+        }
+
+        /* Keyframes for animations */
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .btns {
+            justify-content: center;
+            /* Centers horizontally */
+            align-items: center;
+            /* Centers vertically */
+            display: flex;
+            column-gap: 2rem;
+            border-radius: 8px;
+        }
+
+        .btn {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            font-weight: 500;
+            color: #000;
+            background-color: #fff;
+            border: none;
+            border-radius: 45px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            outline: none;
+            animation: zoomIn 1s ease;
+        }
+
+        .btn:hover {
+            background-color: #333;
+            box-shadow: 0px 15px 20px rgba(33, 34, 34, 0.4);
+            color: #fff;
+            transform: translateY(-7px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Blog Post 2: The Global Cost of Fast Fashion</h1>
+        <p>Sharing my thoughts about Global Cost of Fast Fashion</p>
+    </header>
+
+    <nav>
+        <div class="btns">
+            <button class="btn"
+                onclick="window.location.href='Work sited.jpg'">Source</button>
+            <!--<button class="btn">Source</button>
+            <button class="btn">Source</button>-->
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Introduction</h2>
+            <p>Welcome back to blog post 2! Today I will be sharing something I have learned in class, fashion!
+                As we covered in class, fast fashion is among the most current topics of how globalization has
+                fundamentally changed consumer industry. Companies quickly create large quantities of stylish,
+                affordable clothing; which results in growth in a globalized economy. Customers may easily
+                acquire the newest trends with this approach to fashion. As it releases new collections in weeks
+                rather than months and satisfies the desire for reasonably priced. This quick cycle has been the
+                foundation of the business models of companies like Zara, H&M, and Shein, generating
+                enormous profits and an ongoing flow of new goods (Cachon & Swinney, 2011; Tokatli, 2008) </p>
+        </article>
+
+        <article>
+            <h2>Here is a look:</h2>
+            <img src="images/Fast fashion.jpg" alt="picture of a Fast fashion" title="Fast fashion picture">
+        </article>
+
+        <article>
+            <h2>The Human Cost </h2>
+            <p>Global supply chains in which components are obtained from one region, constructed in another,
+                and marketed globally. The foundation of global fast fashion firms such as Zara, H&M, and
+                Shein. To meet consumer demand, these companies consistently produce stylish, reasonably
+                priced goods. However, their low pricing frequently conceals the abuse of workers in countries
+                like Bangladesh, India, and Vietnam. Ethical concerns about global labor standards and the fair
+                treatment of workers exist because clothing workers in these countries are frequently paid less
+                than living wages. Work in hazardous circumstances, and lack fundamental labor rights (Tokatli,
+                2008). We discovered that the phrase "race to the bottom" refers to the battle between nations to
+                provide the lowest prices, frequently at the expense of the welfare of their workforce.</p>
+        </article>
+
+        <article>
+            <h2>Environmental Impact </h2>
+            <p>Fast fashion has a significant negative influence on the environment. Research indicates that
+                every year, millions of tons of fabric waste wind up in landfills due to the quick changes in
+                fashion. Furthermore, the production of textiles requires a lot of water and harmful dyes, which
+                pollutes water supplies and depletes resources in nations with lax or nonexistent environmental
+                laws (Bick, Halsey, & Ekenga, 2018). This environmental cost serves as a reminder of one of the
+                drawbacks of globalization: the preference for financial gain over ecological sustainability. The
+                world is further harmed by these materials because they are not recyclable and can take hundreds
+                of years to break down.</p>
+        </article>
+
+        <article>
+            <h2>Connections </h2>
+            <p>We talked about potential remedies in class, like heightened consumer awareness and legislative
+                frameworks that support sustainable behaviors. As buyers, we should make better moral
+                decisions if we are aware of the sources and effects of the clothes we buy. As customers we can
+                go with alternatives to fast fashion or shopping, that leads to less harm an example, a thrift store.
+                Companies which support and value ethical labor practices and environmental responsibility and
+                prioritize quality over quantity I encourage you to examine your own buying habits and think
+                about how they may fit into more environmentally friendly practices.</p>
+        </article>
+
+        <article>
+            <h2>Globalized World </h2>
+            <p>Fast fashion serves as an example of the complexities of a global consumer culture where ethics
+                are frequently assigned to business. We can now afford fashion thanks to globalization! But it
+                has also created a system were ecosystems and vulnerable communities. Restructuring the
+                fashion industry toward a more sustainable and equitable model can be achieved. Share your
+                information with friends and family to help spread the word. We can all have a greater impact if
+                more people are aware of the true consequences of rapid fashion. Your decisions have the power
+                to improve the future of our world and its inhabitants. Let us work toward a fashion industry that
+                prioritizes ethics and sustainability before financial gain.
+                </p>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+        <p>Nairouz Sido</p>
+    </footer>
+
+</body>
+
+</html>
