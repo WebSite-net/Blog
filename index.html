@@ -89,6 +89,22 @@
                 transform: rotate(45deg);
                 /* Keep the rotation */
             }
+
+
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(0);
+                /* Ensure no vertical movement */
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+                /* Keep it at the original position */
+            }
         }
 
         body {
@@ -96,6 +112,7 @@
             margin: 0px;
             padding: 0;
             overflow-x: hidden;
+            font-family: Arial, sans-serif;
         }
 
         header {
@@ -110,8 +127,6 @@
             position: fixed;
             top: 0;
             left: 0;
-            margin: 0;
-            /* Optional to remove default margin */
         }
 
         header:first-of-type {
@@ -129,15 +144,8 @@
             /* Smooth transition effect */
         }
 
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-
         h1 {
             font-size: 2.5rem;
-            margin-bottom: 30px;
         }
 
         .menu {
@@ -192,6 +200,8 @@
             transform: translateY(-7px);
         }
 
+        
+
         .btn img {
             width: 300px;
             height: 300px;
@@ -202,47 +212,67 @@
         }
 
         .curved-square {
-            width: 37vw;
-            height: 37vw;
-            background-color: #3e2b23;
-            border-radius: 20px;
-            transform: rotate(45deg);
+            --r: 25px;
+            width: 500px;
+            aspect-ratio: 1/2;
+            -webkit-mask:
+                linear-gradient(90deg, #0000 calc(var(--r)/sqrt(2)), #000 0),
+                radial-gradient(var(--r) at calc(var(--r)*sqrt(2)) 50%, #000 98%, #0000 101%);
+            clip-path: polygon(0 50%, 100% 100%, 100% 0);
+            background: linear-gradient(45deg, #3e2b23, #3e2b23);
+
+            right: 0;
+            /* Align to the right side */
+            top: 50%;
+            /* Center vertically */
+            transform: translateY(-50%);
             position: fixed;
-            right: -18vw;
-            top: 13.7vh;
-            animation: easeIn 1s ease-out;
         }
 
         .circle {
-            width: 800px;
-            height: 800px;
+            width: 400px;
+            height: 400px;
             background-color: #3e2b23;
-            border-radius: 50%;
+            border-top-left-radius: 0;
+            border-top-right-radius: 100%;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
             position: fixed;
-            left: -400px;
-            bottom: -400px;
+            left: 0;
+            bottom: 0;
             animation: slideDown 1s ease-out;
+            /* Optional: remove this if clipping isn't required */
         }
 
         .circle2 {
-            width: 750px;
-            height: 750px;
+            width: 350px;
+            height: 350px;
             background-color: #ffffff;
-            border-radius: 50%;
+            border-top-left-radius: 0;
+            border-top-right-radius: 100%;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
             position: fixed;
-            left: -400px;
-            bottom: -400px;
+            left: 0;
+            /* Center horizontally */
+            bottom: 0;
+            /* Center vertically */
             animation: slideDown 1s ease-out;
         }
 
         .circle3 {
-            width: 700px;
-            height: 700px;
+            width: 300px;
+            height: 300px;
             background-color: #333;
-            border-radius: 50%;
+            border-top-left-radius: 0;
+            border-top-right-radius: 100%;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
             position: fixed;
-            left: -400px;
-            bottom: -400px;
+            left: 0;
+            /* Center horizontally */
+            bottom: 0;
+            /* Center vertically */
             animation: slideDown 1s ease-out;
         }
 
@@ -254,11 +284,11 @@
         }
 
         .letters {
-            position: absolute;
-            top: -24vw;
+            position: fixed;
+            top: 50%;
             /* Adjust this to control the distance between letters and square */
-            right: -4vw;
-            transform: translateX(-50%);
+            right: 0;
+            transform: translateY(-50%);
             display: flex;
             flex-direction: column;
             /* Stack letters vertically */
@@ -269,27 +299,28 @@
         }
 
         .letters span {
-            font-size: 50px;
+            font-size: 60px;
             font-weight: bold;
             color: #ffffff;
             /* Change the letter color as needed */
         }
 
         .logo img {
-            position: absolute;
-            top: -11vw;
-            right: 5vw;
-            width: 16%;
+            position: fixed;
+            top: 35%;
+            right: 200px;
+            width: 14%;
             height: auto;
+            animation: fadeInUp 1s ease-out;
         }
 
         .global img {
-            position: absolute;
-            bottom: -23vw;
-            left: -3vw;
+            position: fixed;
+            bottom: 0;
+            left: 0;
             width: 15%;
             height: auto;
-            animation: slideDown 1s ease-out;
+            animation: fadeInUp 1s ease-out;
         }
     </style>
 </head>
@@ -302,13 +333,17 @@
     </header>
 
     <div class="btns">
-        <button class='btn' onclick="window.location.href='index3.html'">
+        <button class='btn' onclick="window.location.href='index.html'">
             <div class="btn-text">Go to Blog 1</div>
-            <img src="Blog.JPG" alt="Blog 1">
+            <img src="images/Blog.JPG" alt="Blog 1">
         </button>
         <button class='btn' onclick="window.location.href='index2.html'">
             <div class="btn-text">Go to Blog 2</div>
-            <img src="Blog2.JPG" alt="Blog 2">
+            <img src="images/Blog2.JPG" alt="Blog 2">
+        </button>
+        <button class='btn' onclick="window.location.href='index4.html'">
+            <div class="btn-text">Go to Blog 4</div>
+            <img src="images/Blog4.JPG" alt="Blog 4">
         </button>
     </div>
 
@@ -331,11 +366,11 @@
         </div>
 
         <div class="logo">
-            <img src="Logo.png" alt="Mcmaster Logo">
+            <img src="images/Logo.png" alt="Mcmaster Logo">
         </div>
 
         <div class="global">
-            <img src="global.png" alt="Globalization">
+            <img src="images/global.png" alt="Globalization">
         </div>
 </body>
 
