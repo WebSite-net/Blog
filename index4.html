@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Post 4: The Global Cost of Fast Fashion.">
+    <title>My Blog 4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+
+        /* Header Animation */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            animation: slideDown 1s ease-out;
+        }
+
+        header:first-of-type:hover {
+            transform: scale(1.05);
+            /* Grows the article slightly on hover */
+        }
+
+        header:first-of-type {
+            transition: transform 0.3s ease;
+            /* Smooth transition effect */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header h1:first-of-type:hover {
+            transform: scale(1.05);
+            /* Grows the article slightly on hover */
+        }
+
+        header h1:first-of-type {
+            transition: transform 0.3s ease;
+            /* Smooth transition effect */
+        }
+
+        /* Navigation Animation */
+        nav {
+            text-align: center;
+            margin: 20px 0;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff6347;
+        }
+
+        /* Main Content Animation */
+        main {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 50px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1.5s ease;
+        }
+
+        article {
+            margin-bottom: 40px;
+        }
+
+        article h2 {
+            color: #333;
+            font-size: 1.8em;
+            animation: zoomIn 1s ease;
+        }
+
+        article h2:first-of-type:hover {
+            transform: scale(1.05);
+            /* Grows the article slightly on hover */
+        }
+
+        article h2:first-of-type {
+            transition: transform 0.3s ease;
+            /* Smooth transition effect */
+        }
+
+        article p {
+            line-height: 1.6;
+            font-size: 1.1em;
+            animation: fadeInText 2s ease;
+        }
+
+        article p:first-of-type:hover {
+            transform: scale(1.05);
+            /* Grows the article slightly on hover */
+        }
+
+        article p:first-of-type {
+            transition: transform 0.3s ease;
+            /* Smooth transition effect */
+        }
+
+        /* Image Styling and Animation */
+        article img {
+            display: block;
+            /* Centers the image */
+            margin: 20px auto;
+            /* Centering the image */
+            width: 50%;
+            height: 25%;
+            transition: transform 0.3s ease;
+            /* Smooth transition for hover effect */
+        }
+
+        article img:hover {
+            transform: scale(1.05);
+            /* Grows the image slightly on hover */
+        }
+
+        /* Footer Animation */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+            animation: slideUp 1s ease-out;
+        }
+
+        footer:first-of-type:hover {
+            transform: scale(1.05);
+            /* Grows the article slightly on hover */
+        }
+
+        footer:first-of-type {
+            transition: transform 0.3s ease;
+            /* Smooth transition effect */
+        }
+
+        /* Keyframes for animations */
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .btns {
+            justify-content: center;
+            /* Centers horizontally */
+            align-items: center;
+            /* Centers vertically */
+            display: flex;
+            column-gap: 2rem;
+            border-radius: 8px;
+        }
+
+        .btn {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            font-weight: 500;
+            color: #000;
+            background-color: #fff;
+            border: none;
+            border-radius: 45px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            outline: none;
+            animation: zoomIn 1s ease;
+        }
+
+        .btn:hover {
+            background-color: #333;
+            box-shadow: 0px 15px 20px rgba(33, 34, 34, 0.4);
+            color: #fff;
+            transform: translateY(-7px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Blog Post 4 The Global Food Supply Chain</h1>
+        <p>Sharing my thoughts about Global Food Supply Chain</p>
+    </header>
+
+    <nav>
+        <div class="btns">
+            <button class="btn"
+                onclick="window.location.href='images/Work sited2.jpg'">Source</button>
+            <!--<button class="btn">Source</button>
+            <button class="btn">Source</button>-->
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <h2>The Impact of Globalization on the Food Supply Chain</h2>
+            <p>Welcome to the last blog post! Today we will be talking about the global food supply system, a
+                topic that impacts everyone. Enjoying delicious foods from around the world is now accessible
+                due to globalization, which has changed how we produce, distribute, and consume food.
+                However, these advantages come with significant drawbacks, particularly in regard to the harm
+                done to the environment and the people who grow our food. Let's examine how this connected
+                system functions and what it implies for the plane and its inhabitants worldwide. </p>
+        </article>
+
+        <article>
+            <h2>The Human and Economic Cost</h2>
+            <p>The world's food system relies on labor from countries with low incomes, where workers in
+                industries like tea, coffee, and cocoa endure poor working conditions, little pay, and few rights.
+                For example, even though West Africa produces the bulk of the world's cocoa, many of its
+                farmers live in poverty. Additionally, small-scale farmers find it difficult to compete with huge
+                agribusinesses that control international marketplaces and enjoy economies of scale. Rural areas
+                continue to experience poverty as a result of this mismatch, which prevents smaller producers
+                from accessing fair pricing or markets (Ancel, 2024).</p>
+        </article>
+
+        <article>
+            <h2>Solutions and Connections </h2>
+            <p>According to the lectures, we explored potential remedies, such as supporting local and
+                sustainable food systems. To solve the problems with the global food system, local and
+                sustainable food practices must be encouraged. Buying locally produced food helps local farmers
+                and lowers transportation-related emissions, while buying fair trade-certified products guarantees
+                that farmers are paid fairly and have better working conditions. Furthermore, a third of the
+                world's food is wasted. Wasting resources and raising emissions, making food waste reduction
+                essential. Mindful consumption and meal planning are two easy ways to drastically cut down on
+                waste in the home. Customers are able to support moral and sustainable solutions to the problems
+                facing the world's food system.
+                </p>
+        </article>
+
+        <article>
+            <h2>A Globalized Food System: The Need for Change </h2>
+            <p>Access to a variety of foods has been improved by globalization, but it has also produced a
+                system that presents serious ethical and environmental issues. We can contribute to a more
+                sustainable and just food system by making low, well-informed adjustments to our purchasing
+                patterns. By taking these steps, we may strive toward a food system that strikes a balance
+                between sustainability, ethics, and accessibility.</p>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+        <p>Nairouz Sido</p>
+    </footer>
+
+</body>
+
+</html>
